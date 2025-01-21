@@ -1,10 +1,6 @@
 process.on('uncaughtException', console.error)
 process.on('unhandledRejection', console.error)
-/*
- * Recode By Sychyy @Naze
- * Follow https://github.com/sychyy
- * Whatsapp : https://wa.me/6287862997267
- */
+
 require('./settings');
 require('./setown');
 const sharp = require('sharp');
@@ -1602,7 +1598,7 @@ for (const emoji of reactEmojis) {
 			case 'sc':
 			case 'script':
 			case 'esce': {
-				const iniesce = `https://github.com/sychyy/sychee\n⬆️ Itu Sc nya cuy`
+				const iniesce = `https://github.com/gamer263603/Holic_Bot_V1\n⭐Star!!`
 					sych.relayMessage(m.chat,  {
                        requestPaymentMessage: {
                           currencyCodeIso4217: 'IDR',
@@ -6309,14 +6305,14 @@ ${f}*Tanggal* : ${tanggal}
 ${f}*Hari* : ${hari}
 ${f}*Jam* : ${jam} WIB
 
-${f}╭━━━┳╮╱╱╭┳━━━┳╮╱╭┳╮╱╱╭╮
-${f}┃╭━╮┃╰╮╭╯┃╭━╮┃┃╱┃┃╰╮╭╯┃
-${f}┃╰━━╋╮╰╯╭┫┃╱╰┫╰━╯┣╮╰╯╭╯
-${f}╰━━╮┃╰╮╭╯┃┃╱╭┫╭━╮┃╰╮╭╯
-${f}┃╰━╯┃╱┃┃╱┃╰━╯┃┃╱┃┃╱┃┃
-${f}╰━━━╯╱╰╯╱╰━━━┻╯╱╰╯╱╰╯
+${f}|         |
+${f}|	      |
+${f}|---------|
+${f}|         |
+${f}|         |
+${f}|         |
 
-${n}ᯓ★ SIMPEL MENU ${botname} ★ᯓ${n}
+${n}🥶 FROSTY MENU ${botname} 🧊${n}
 
 ${setv} ${prefix}ALLMENU
 ${setv} ${prefix}DOWNLOADMENU
