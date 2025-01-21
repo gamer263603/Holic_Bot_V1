@@ -1,0 +1,51 @@
+==========================SYCHBOT============================
+
+hellooww sebelumnya perkenalkan saya adalah yuda (ydoyy).
+saya sudah lama bermain bot wa, tapi sekrang sudah lupa semua :).
+disini saya membagikan sc no ENC apalah enc pelit banget awokwok!
+script nya dari king ©NAZE jangan lupa di subrek saya cuma recode aja hehe.
+banyak sekali bug(nguwawur bukan bug wa ya) tapi disini saya hanya ingin
+kalian mencoba script yang saya recode dan menambah fitur yang tentunya work ya
+karena saya sudah mencobanya
+    #botwatermux ga perlu panel" an karna panel itu bayar mending yang simpel kan? 
+                 lagian run bot buat diri sendiri juga kan?
+
+========================================================
+
+kenapa module nya dipisah? 
+yaa karnaa ada bug kalo install langsung
+
+BACA DENGAN TELITI!
+$ pkg update && pkg upgrade 
+$ pkg install git
+$ pkg install bash
+$ pkg install nodejs
+$ pkg install ffmpeg
+$ pkg install imagemagick
+$ pkg install libvips
+$ pkg install yarn
+$ pkg install mc
+$ termux-setup-storage
+$ cd storage
+$ cd downloads
+$ cd sych
+$ cp -r sych $HOME
+
+==========================================================
+
+PERINTAH KE-2!!
+
+setelah kalian melakukan yarn dan selesai, kalian langsung ekstrak
+node_module.zip terserah dimana asal jangan di luar folder download
+nah nanti kalo pas (figlet) ada peringatan merah kalian All in aja
+jika sudah selesai ganti yang (sharp) jika sharp sudah selesai
+jangan langsung di run!
+kalian command ini: 
+
+$ npm install --cpu=wasm32 sharp
+
+jika sudah selesai command:
+
+$ npm start
+
+nanti disuruh kasih nomer 62xxxxx dan code pairing xxXXxXX
