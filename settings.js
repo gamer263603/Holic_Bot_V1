@@ -7,17 +7,17 @@ const chalk = require('chalk');
  */
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 //settings owner di ./setown.js
-global.packname = 'SychBotz'
-global.owner = ["62882008702155"]
-global.botnum = ["6287862997267"]
-global.author = 'ydaa'
-global.owname = 'mzyda'
-global.botname = 'SYCHY BOTz'
-global.themeemoji = '🪀'
+global.packname = 'HolicBot'
+global.owner = ["918968130865"]
+global.botnum = ["918968130865"]
+global.author = 'GAMER ICE KING'
+global.owname = 'GAMER ICE KING'
+global.botname = 'Holic Bot'
+global.themeemoji = '❄️'
 global.f = '> '
 global.n = '`'
 global.videoMenu = fs.readFileSync('./sychMedia/menu/sych.mp4');
-global.listv = ['⛏', '●', '■', '✿', '▲', 'ଳ', 'ϟ', '✶', '➤', '✦', '✧', '△', '❀', '⋆𖦹', '□', '𖤓', 'ᨒ', '◇', '𖣂', '々', '〆', 'ᯓ★', '꩜', '✮']
+global.listv = ['❄️', '❄️', '☃️', '❄️', '🧊', '🥶', '🧊', '🧊', '🥶', '🥶', '🥶', '🥶', '🥶', '🧊', '🧊', '🥶', '❄️', '❄️', '❄️', '❄️', '☃️', '☃️', '☃️', '☃️']
 global.emot = ['🌱', '🌻', '🌞', '❄️', '🌿', '💫', '⭐', '🍃', '🔥', '⚡', '🫧', '🌵', '🪺', '🪨', '🪵', '🌪️', '🍄']
 global.tempatDB = 'database.json'
 global.pairing_code = true
@@ -31,9 +31,9 @@ global.fake = {
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf'],
 }
 global.my = {
-	yt: 'https://www.youtube.com/@sychyy00',
-	gh: 'https://github.com/sychyy',
-	gc: 'https://chat.whatsapp.com/GQ5Gp0eSeDS6dPBYeHE6kf',
+	yt: 'https://www.youtube.com/@GAMERICEKING',
+	gh: 'https://github.com/gamer263603',
+	gc: 'https://chat.whatsapp.com/E03XEqdTYFzFXBaQCa1tBK',
 	ch: '120363383347233294@newsletter',
 }
 global.limit = {
