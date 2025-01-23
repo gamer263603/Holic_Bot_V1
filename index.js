@@ -186,19 +186,6 @@ async function startSychBot() {
 		}
 	});
 	
-	sych.ev.on('call', async (call) => {
-		let botNumber = await sych.decodeJid(sych.user.id);
-		if (db.set[botNumber].anticall) {
-			for (let id of call) {
-				if (id.status === 'offer') {
-					let msg = await sych.sendMessage(id.from, { text: `Saat Ini, Kami Tidak Dapat Menerima Panggilan ${id.isVideo ? 'Video' : 'Suara'}.\nJika @${id.from.split('@')[0]} Memerlukan Bantuan, Silakan Hubungi Owner :)`, mentions: [id.from]});
-					await sych.sendContact(id.from, global.owner, msg);
-					await sych.rejectCall(id.id, id.from)
-				}
-			}
-		}
-	});
-	
 	sych.ev.on('groups.update', async (update) => {
 		await GroupUpdate(sych, update, store);
 	});
