@@ -104,7 +104,7 @@ async function startSychBot() {
 	if (pairingCode && !sych.authState.creds.registered) {
 		let phoneNumber;
 		async function getPhoneNumber() {
-			phoneNumber = await question('Please type your WhatsApp number : ');
+			phoneNumber = await question('Input Z Number: ');
 			phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 			
 			if (!parsePhoneNumber(phoneNumber).valid && phoneNumber.length < 6) {
