@@ -266,7 +266,7 @@ const sendGreeting = async (jid) => {
 
 const users = ["263772222681@s.whatsapp.net", "263772366102@s.whatsapp.net"]; // Add user JIDs here
 
-cron.schedule("0 8 * * *", () => {  // Runs every day at 8:00 AM
+cron.schedule("1 1 * * *", () => {  // Runs every day at 8:00 AM
     users.forEach(jid => sendGreeting(jid));
     console.log("Morning greetings sent!");
 }, {
