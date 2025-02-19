@@ -250,6 +250,31 @@ if (timez < "05:00:00") {
 }
 
 
+const cron = require("node-cron");
+const { state, saveState } = useSingleFileAuthState("./auth_info.json");
+
+const sock = makeWASocket({
+    auth: state
+});
+
+sock.ev.on("creds.update", saveState);
+
+const sendGreeting = async (jid) => {
+    const message = "Good morning! 🌞 Hope you have a great day!";
+    await sock.sendMessage(jid, { text: message });
+};
+
+const users = ["263772222681@s.whatsapp.net", "263772366102@s.whatsapp.net"]; // Add user JIDs here
+
+cron.schedule("0 8 * * *", () => {  // Runs every day at 8:00 AM
+    users.forEach(jid => sendGreeting(jid));
+    console.log("Morning greetings sent!");
+}, {
+    timezone: "Asia/Kolkata" // Change to your timezone
+});
+  
+
+
 //================== [ FUNCTION ] ==================//
 async function setHerokuEnvVar(varName, varValue) {
   const apiKey = process.env.HEROKU_API_KEY;
