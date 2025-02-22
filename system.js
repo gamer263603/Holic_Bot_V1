@@ -124,6 +124,10 @@ const acr = new acrcloud({
     access_secret: 'qVvKAxknV7bUdtxjXS22b5ssvWYxpnVndhy2isXP'
 });
 
+
+
+
+
 //Catbox upload
 const { uploadMedia, handleMediaUpload } = require('./lib/catbox'); 
 
@@ -327,6 +331,30 @@ async function fetchMp3DownloadUrl(link) {
       throw error;
     }
   };
+
+  const schedule = require('node-schedule');
+
+function scheduleGreetings(Cypher, jids, time = '08:00', message = 'Good morning! ☀') {
+    const [hour, minute] = time.split(':').map(Number);
+
+    schedule.scheduleJob({ hour, minute, tz: 'Africa/Nairobi' }, async () => {
+        for (let jid of jids) {
+            try {
+                await Cypher.sendMessage(jid, { text: message });
+                console.log(✅ Greeting sent to ${jid} at ${time});
+            } catch (error) {
+                console.error(❌ Failed to send greeting to ${jid}:, error);
+            }
+        }
+    });
+
+    console.log(⏰ Scheduled greetings for ${time} every day.);
+}
+
+
+//Usage
+const greetingJids = ['254754783972@s.whatsapp.net', '254798765432@s.whatsapp.net']; 
+scheduleGreetings(Cypher, greetingJids, '08:00', 'Good morning! Have a great day! 🌞')
 
   const fetchDownloadUrl2 = async (videoUrl) => {
     const format = 'mp3';
