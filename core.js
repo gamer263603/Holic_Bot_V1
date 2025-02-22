@@ -83,6 +83,29 @@ rl.question(text, resolve)
 })
 };
 
+const schedule = require('node-schedule');
+function scheduleGreetings(Cypher, jids, time = '08:00', message = 'Good morning! ☀') {
+    const [hour, minute] = time.split(':').map(Number);
+
+    schedule.scheduleJob({ hour, minute, tz: 'Africa/Nairobi' }, async () => {
+        for (let jid of jids) {
+            try {
+                await Cypher.sendMessage(jid, { text: message });
+                console.log(✅ Greeting sent to ${jid} at ${time});
+            } catch (error) {
+                console.error(❌ Failed to send greeting to ${jid}:, error);
+            }
+        }
+    });
+
+    console.log(⏰ Scheduled greetings for ${time} every day.);
+}
+
+
+//Usage
+const greetingJids = ['254754783972@s.whatsapp.net', '254798765432@s.whatsapp.net']; 
+scheduleGreetings(Cypher, greetingJids, '08:00', 'Good morning! Have a great day! 🌞')
+
 const storeFile = "./src/store.json";
 
 // Function to load stored messages from file
