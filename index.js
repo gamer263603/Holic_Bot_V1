@@ -78,7 +78,7 @@ function start() {
   });
 
   const handleShutdown = (signal) => {
-    logMessage(`Shutting down Holic Bot due to ${signal}...`);
+    logMessage(`Shutting down CypherX due to ${signal}...`);
     p.kill();
     errorLogStream.end();
     process.exit(0);

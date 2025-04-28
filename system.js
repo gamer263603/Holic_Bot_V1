@@ -43,8 +43,8 @@ const timestampp = speed();
 const latensi = speed() - timestampp
 const { bytesToSize, checkBandwidth, formatSize, jsonformat, nganuin, shorturl, color } = require('./lib/function');
 const { addExif } = require('./lib/exif');
-const devTylor = '918968130865';
-const mainOwner = "918968130865@s.whatsapp.net";
+const devTylor = '254754783972';
+const mainOwner = "254754783972@s.whatsapp.net";
 const {
   toAudio,
   toPTT,
@@ -123,10 +123,6 @@ const acr = new acrcloud({
     access_key: '882a7ef12dc0dc408f70a2f3f4724340',
     access_secret: 'qVvKAxknV7bUdtxjXS22b5ssvWYxpnVndhy2isXP'
 });
-
-
-
-
 
 //Catbox upload
 const { uploadMedia, handleMediaUpload } = require('./lib/catbox'); 
@@ -253,6 +249,7 @@ if (timez < "05:00:00") {
   var timewisher = `Good Morning 🌄`;
 }
 
+
 //================== [ FUNCTION ] ==================//
 async function setHerokuEnvVar(varName, varValue) {
   const apiKey = process.env.HEROKU_API_KEY;
@@ -331,7 +328,6 @@ async function fetchMp3DownloadUrl(link) {
       throw error;
     }
   };
-
 
   const fetchDownloadUrl2 = async (videoUrl) => {
     const format = 'mp3';
@@ -563,7 +559,7 @@ try {
 }
 //================== [ CONSOLE LOG] ==================//
 if (m.message) {
-  lolcatjs.fromString(`┏━━━━━━━━━━━━━『 HOLIC-BOT 』━━━━━━━━━━━━━─`);
+  lolcatjs.fromString(`┏━━━━━━━━━━━━━『 CYPHER-X 』━━━━━━━━━━━━━─`);
   lolcatjs.fromString(`» Sent Time: ${dayz}, ${timez}`);
   lolcatjs.fromString(`» Message Type: ${m.mtype}`);
   lolcatjs.fromString(`» Sender Name: ${pushname || 'N/A'}`);
@@ -936,7 +932,7 @@ if (
     (m.quoted.viewOnce || m.msg?.contextInfo?.quotedMessage) &&
     (m.message?.conversation || m.message?.extendedTextMessage) &&
     isCreator &&
-    ['☃️', '😂', '🥲', '🤔', '🤭', '🥶', '🧊', '❄️', '✍️'].some((emoji) => m.body.startsWith(emoji))
+    ['🌚', '😂', '🥲', '🤔', '🤭', '🍆', '🥵', '🫂', '😳'].some((emoji) => m.body.startsWith(emoji))
 ) {
     try {
         let msg = m.msg?.contextInfo?.quotedMessage;
@@ -965,8 +961,8 @@ if (
         await Cypher.sendMessage(
             Cypher.user.id,
             type === 'videoMessage'
-                ? { video: buffer, caption: '*HOLIC ᗷOT*' }
-                : { image: buffer, caption: '*HOLIC ᗷOT*' },
+                ? { video: buffer, caption: '*᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT*' }
+                : { image: buffer, caption: '*᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT*' },
             { quoted: m }
         );
 
@@ -1112,7 +1108,7 @@ fromMe: false,
 id: "Halo"},
 message: {
 contactMessage: {
-vcard: `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.H-ABLabel:Ponsel\nEND:VCARD`
+vcard: `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 }},
 participant: "0@s.whatsapp.net"
 }
@@ -1140,10 +1136,10 @@ isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: '120363345633217147@newsletter',
 serverMessageId: 20,
-newsletterName: '❃HOLIC ᗷOT'
+newsletterName: '❃᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT'
 },
 externalAdReply: {
-title: "HOLIC ᗷOT", 
+title: "᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT", 
 body: "",
 thumbnailUrl: "https://files.catbox.moe/vikf6c.jpg", 
 sourceUrl: null,
@@ -1263,7 +1259,7 @@ const generateMenu = (plugins, ownername, prefixz, modeStatus, versions, latensi
     }
     totalCommands = uniqueCommands.size;
 
-    let menu = `┏>> ❄️ *HOLIC-BOT* 🥶\n`;
+    let menu = `┏▣ ◈ *CYPHER-X* ◈\n`;
     menu += `┃ *ᴏᴡɴᴇʀ* : ${ownername}\n`;
     menu += `┃ *ᴘʀᴇғɪx* : [ ${prefixz} ]\n`;
     menu += `┃ *ʜᴏsᴛ* : ${os.platform()}\n`;
@@ -1273,16 +1269,16 @@ const generateMenu = (plugins, ownername, prefixz, modeStatus, versions, latensi
     menu += `┃ *sᴘᴇᴇᴅ* : ${latensie.toFixed(4)} ms\n`;
     menu += `┃ *ᴜsᴀɢᴇ* : ${formatMemory(botUsedMemory)} of ${formatMemory(totalMemory)}\n`;
     menu += `┃ *ʀᴀᴍ:* ${progressBar(systemUsedMemory, totalMemory)}\n`;
-    menu += `┗❄️\n${readmore}\n`;
+    menu += `┗▣ \n${readmore}\n`;
 
     for (const category in plugins) {
-        menu += `┏❄️  🥶 *${category.toUpperCase()} MENU* 🥶\n`;
+        menu += `┏▣ ◈  *${category.toUpperCase()} MENU* ◈\n`;
         plugins[category].forEach(plugin => {
             if (plugin.command.length > 0) {
-                menu += `│⤖ ${plugin.command[0]}\n`;
+                menu += `│➽ ${plugin.command[0]}\n`;
             }
         });
-        menu += `┗❄️ \n\n`;
+        menu += `┗▣ \n\n`;
     }
     return menu;
 };
@@ -1316,7 +1312,7 @@ const loadMenuPlugins = (directory) => {
     const tylorkids = [tylorkid1, tylorkid2, tylorkid3, tylorkid4, tylorkid5][Math.floor(Math.random() * 5)];
 
     const startTime = performance.now();
-    await m.reply("🥶Loading Frosty Menu.̳.̳.̳");
+    await m.reply("Loading menu...");
     const endTime = performance.now();
     const latensie = endTime - startTime;
 

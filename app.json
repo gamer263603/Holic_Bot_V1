@@ -1,5 +1,5 @@
 {
-  "name": "HolicBot",
+  "name": "CypherX",
   "version": "1.2.5",
   "description": "CypherX, the best WhatsApp Bot",
   "logo": "https://i.ibb.co/DRW8wCV/Xploader4.jpg",
@@ -11,33 +11,33 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter your HolicBot session id here; must start with XPLOADER-BOT:~",
+      "description": "Enter your CypherX session id here; must start with XPLOADER-BOT:~",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
       "description": "Enter your bot name here",
-      "value": "HolicBot",
+      "value": "CypherX",
       "required": false
     },
     "OWNER_NUMBER": {
       "description": "Enter your number here",
-      "value": "918968130865",
+      "value": "254754783972",
       "required": true
     },
     "OWNER_NAME": {
       "description": "Enter your name here",
-      "value": "HolicBot",
+      "value": "Tylor",
       "required": true
     },
     "STICKER_PACK_NAME": {
       "description": "Sticker pack name",
-      "value": "HolicBot",
+      "value": "Cypher",
       "required": false
     },
     "STICKER_AUTHOR_NAME": {
       "description": "Sticker author name",
-      "value": "HolicBot",
+      "value": "X",
       "required": false
     },
     "HEROKU_API_KEY": {
@@ -107,7 +107,7 @@
     },
     "SUDO": {
       "description": " Type additional allowed users here. They'll be able to use all the functions of the bot without restrictions. Separate with comma incase of more than one number.",
-      "value": "918968130865,918968130865",
+      "value": "254796180105,639852804510",
       "required": false
     },
     "AUTO_READ": {
